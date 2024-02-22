@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Main implements MainInterface{
     private int valeurTotale;
     private String nomCarte;
     private int nbCartes;
@@ -47,12 +47,12 @@ public class Main {
     public List<Carte> getCartes() {
         return cartes;
     }
-
+    @Override
     public void ajouterCarte(Carte carte){
         cartes.add(carte);
         this.nbCartes++;
     }
-
+    @Override
     public int calculerValeurMain(){
         int nombreAs=0;
         valeurTotale = 0;

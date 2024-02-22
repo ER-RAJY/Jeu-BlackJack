@@ -1,4 +1,4 @@
-public class Personne {
+public abstract class Personne {
     public Main main;
 
     public Personne(){
@@ -9,6 +9,8 @@ public class Personne {
         return main;
     }
 
+
+    public abstract void distribuerCartes(Joueur joueur, PaquetCartes paquet);
 
     public void  tirerCarte(PaquetCartes paquet){
 

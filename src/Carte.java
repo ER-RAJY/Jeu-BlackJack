@@ -1,6 +1,6 @@
 
 
-public class Carte {
+public class Carte implements CarteInterface{
 
     private Valeur valeur;
     private Types type;
@@ -9,11 +9,12 @@ public class Carte {
         this.valeur=valeur;
         this.type=type;
     }
-
-    public void setValeur(Valeur valeur) {
+    @Override
+    public void setValeur(Valeur valeur)
+    {
         this.valeur = valeur;
     }
-
+    @Override
     public Valeur getValeur() {
         return valeur;
     }
